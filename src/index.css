@@ -1,0 +1,58 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.squares{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  backface-visibility: hidden;
+}
+
+.square1{
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  color: white;
+  background-color: red;
+  transition: all .5s;
+  z-index: 3;
+}
+
+.square2{
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  background-color: yellow;
+  transition: all .5s;
+  right: 0;
+  z-index: 2;
+}
+
+.square3{
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  background-color: green;
+  bottom: 0;
+  z-index: 10;
+  transition: all .5s;
+}
+
+.square4{
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  background-color: blue;
+  color: white;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  transition: all 1s;
+}
